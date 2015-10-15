@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res/mobi.victorchandler"
+	android:layout_width="fill_parent" android:id="@+id/linearLayout1"
+	android:layout_height="fill_parent">
+	<mobi.victorchandler.view.ActionBar
+		android:id="@+id/actionbar" style="@style/ActionBar">
+	</mobi.victorchandler.view.ActionBar>
+	<ScrollView android:layout_width="match_parent"
+		android:scrollbarAlwaysDrawVerticalTrack="true" android:scrollbarSize="10pt"
+		android:id="@+id/ScrollView01" android:scrollbars="vertical"
+		android:background="@drawable/category_header_background"
+		android:layout_height="fill_parent">
+		<LinearLayout android:id="@+id/linearLayout2"
+			android:layout_width="match_parent" android:orientation="vertical"
+			android:layout_height="fill_parent">
+			<LinearLayout android:gravity="bottom"
+				android:layout_height="wrap_content" android:overScrollMode="always"
+				android:layout_width="fill_parent" android:orientation="vertical"
+				android:id="@+id/linAccount">
+				<TextView android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="fill_parent" android:id="@+id/textView1"
+					android:gravity="center" android:text="Balance"
+					android:layout_height="wrap_content" android:background="@drawable/head_background"></TextView>
+				<RelativeLayout android:layout_margin="10sp"
+					android:layout_height="wrap_content" android:layout_width="fill_parent"
+					android:id="@+id/RelativeLayout03">
+					<TextView android:id="@+id/TextView07" android:text="Balance:"
+						android:layout_height="wrap_content" android:layout_width="wrap_content" android:typeface="normal" android:textSize="15sp" android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+					<TextView android:textAppearance="?android:attr/textAppearanceSmall"
+						android:id="@+id/tvBalance" android:layout_centerVertical="true"
+						android:layout_alignParentRight="true" android:text="99990"
+						android:layout_height="wrap_content" android:layout_width="wrap_content"></TextView>
+				</RelativeLayout>
+				<RelativeLayout android:layout_margin="10sp"
+					android:layout_height="wrap_content" android:layout_width="fill_parent"
+					android:id="@+id/RelativeLayout02">
+					<TextView android:id="@+id/TextView05" android:text="Available Balance:"
+						android:layout_height="wrap_content" android:layout_width="wrap_content" android:typeface="normal" android:textSize="15sp" android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+					<TextView android:textAppearance="?android:attr/textAppearanceSmall"
+						android:id="@+id/tvAvailableBalance" android:layout_alignBaseline="@+id/TextView05"
+						android:layout_alignParentRight="true" android:text="999"
+						android:layout_alignBottom="@+id/TextView05"
+						android:layout_height="wrap_content" android:layout_width="wrap_content"></TextView>
+				</RelativeLayout>
+				<RelativeLayout android:layout_margin="10sp"
+					android:layout_height="wrap_content" android:layout_width="fill_parent"
+					android:id="@+id/RelativeLayout02">
+					<TextView android:textAppearance="?android:attr/textAppearanceMedium"
+						android:id="@+id/TextView05" android:text="Promotional Balance:"
+						android:layout_height="wrap_content" android:layout_width="wrap_content" android:typeface="normal" android:textSize="15sp"></TextView>
+					<TextView android:textAppearance="?android:attr/textAppearanceSmall"
+						android:id="@+id/tvPromoBalance" android:layout_alignBaseline="@+id/TextView05"
+						android:layout_alignParentRight="true" android:text="999"
+						android:layout_alignBottom="@+id/TextView05"
+						android:layout_height="wrap_content" android:layout_width="wrap_content"></TextView>
+				</RelativeLayout>
+				<TextView android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="fill_parent" android:id="@+id/TextView03"
+					android:gravity="center" android:text="Account Information"
+					android:layout_height="wrap_content" android:background="@drawable/head_background"></TextView>
+				<RelativeLayout android:layout_margin="10sp"
+					android:layout_height="wrap_content" android:layout_width="fill_parent"
+					android:id="@+id/RelativeLayout01">
+					<TextView android:textAppearance="?android:attr/textAppearanceMedium"
+						android:id="@+id/TextView01" android:text="Account Number:"
+						android:layout_height="wrap_content" android:layout_width="wrap_content"></TextView>
+					<TextView android:textAppearance="?android:attr/textAppearanceSmall"
+						android:layout_centerVertical="true"
+						android:layout_alignParentRight="true" android:text="1234567890"
+						android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/tvAccountNumber"></TextView>
+				</RelativeLayout>
+				<RelativeLayout android:layout_margin="10sp" android:layout_width="fill_parent" android:id="@+id/RelativeLayout04" android:layout_height="wrap_content">
+					<TextView android:layout_height="wrap_content" android:id="@+id/TextView08" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="wrap_content" android:text="First Name:"></TextView>
+					<TextView android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:id="@+id/tvFirstName" android:text="Steve"></TextView>
+				</RelativeLayout>
+				<RelativeLayout android:layout_margin="10sp" android:layout_width="fill_parent" android:id="@+id/RelativeLayout05" android:layout_height="wrap_content">
+					<TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="wrap_content" android:id="@+id/tvTitleLastName" android:text="Last Name:"></TextView>
+					<TextView android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:id="@+id/tvLastName" android:text="Jobs"></TextView>
+				</RelativeLayout>
+			</LinearLayout>
+			<View android:layout_height="2dip" android:background="#FF909090"
+				android:layout_width="300sp" android:layout_margin="10sp" />
+			<LinearLayout android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:orientation="vertical"
+				android:id="@+id/accountInfoPanel">
+				<LinearLayout android:layout_margin="15sp"
+					android:layout_height="wrap_content" android:layout_width="fill_parent"
+					android:orientation="horizontal" android:id="@+id/userActionPanel">
+					<Button android:text="Statements" android:id="@+id/btnStatementsHome"
+						android:drawableTop="@drawable/statements_icon" style="@style/HomeButton"></Button>
+					<Button android:text="Cashier" android:id="@+id/btnCashierHome"
+						android:drawableTop="@drawable/cashier_icon" style="@style/HomeButton"></Button>
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

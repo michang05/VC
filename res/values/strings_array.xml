@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="titles">
+        <item>@string/title_1</item>
+        <item>@string/title_2</item>
+        <item>@string/title_3</item>
+        
+    </string-array>
+    <string-array name="security_questions">
+        <item>@string/sq_1</item>
+        <item>@string/sq_2</item>
+        <item>@string/sq_3</item>
+        <item>@string/sq_4</item>
+        <item>@string/sq_5</item>
+        <item>@string/sq_6</item>
+    </string-array>
+</resources>

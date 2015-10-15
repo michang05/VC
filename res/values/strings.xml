@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="actionbar_activity_not_found">Failed to open intent...</string>
+    <!-- general -->
+    <string name="error">Error</string>
+    <string name="ok">Ok</string>
+    <string name="app_name">Victor Chandler</string>
+    <string name="minutes">minutes</string>
+    <!-- notifications -->
+    <string name="isstarting">is starting</string>
+    <string name="settledbet">new settled bet(s)</string>
+    <string name="appupdate">new app version available</string>
+    <!-- home screen -->
+    <string name="welcome">Welcome to Victor Chandler</string>
+    <string name="upcomingevents">Upcoming Events</string>
+    <string name="favorites">VC Favorites</string>
+    <!-- headers -->
+    <!-- loading messages -->
+    <string name="initsharing">Initializing</string>
+    <string name="postsharing">posting message</string>
+    <string name="loadmultiples">Loading Multiples...</string>
+    <string name="placebet">Placing Bet..</string>
+    <!-- statements -->
+    <string name="openbets">Open Bets</string>
+    <string name="settledbets">Settled Bets</string>
+    <string name="transactions">Transactions</string>
+    <string name="credit">Credit</string>
+    <string name="debit">Debit</string>
+    <!-- login dialog -->
+    <string name="login">Log in</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="remember">Remember Name</string>
+    <!-- favourites -->
+    <string name="addfav">Add to favorites</string>
+    <string name="unfav">Remove from favorites</string>
+    <string name="favadded">Favorite added</string>
+    <string name="favuned">Favorite removed</string>
+    <!-- bet slip -->
+    <string name="stake">Stake</string>
+    <string name="singlesheader">Single Bets</string>
+    <string name="multipleheader">Multiple Bets</string>
+    <string name="delete">Delete</string>
+    <string name="totalstake">Total Stake:</string>
+    <string name="totalreturn">Possible Returns:</string>
+    <string name="betadded">Outcome Added to Bet Slip</string>
+    <string name="betremoved">Outcome Removed from betslip</string>
+    <string name="notavailable">N/A</string>
+    <string name="submitbet">Place Bet</string>
+    <string name="calculate_returns">Calculate Returns</string>
+    <string name="errorlimit">You have reached your wager limit.</string>
+    <string name="errorBetRestrictions">Bet is restricted</string>
+    <string name="errorclosed">Sorry, this bet has been closed. Please delete.
+	</string>
+    <string name="errorsuspended">This bet is currently suspended. Please try again.
+	</string>
+    <string name="errorpricechanged">The price has changed.</string>
+    <string name="errorstakechanged">Your stake has been lowered.</string>
+    <string name="errorunknown">Unknown error. Please call.</string>
+    <string name="accept">Accept</string>
+    <!-- betreceipt -->
+    <string name="notificationsadded">Notifications added</string>
+    <!-- TABS -->
+    <string name="tab_live_betting">Live Betting</string>
+    <string name="tab_top_bets">Top Bets</string>
+    <string name="tab_next_events">Next Events</string>
+    <string name="tab_all_sports">All Sports</string>
+    <!-- Create Account -->
+    <string name="continue_btn">Continue</string>
+    <string name="create_account_btn">Create Account</string>
+    <string name="account_info">Account Information</string>
+    <string name="username">Username:</string>
+    <string name="password_ca">Password:</string>
+    <string name="email_ca">E-mail address:</string>
+    <string name="security_question_ca">Security Question:</string>
+    <string name="prompt_security_question">Choose Question</string>
+    <string name="answer_ca">Answer:</string>
+    <string name="user_information">User Information</string>
+    <string name="user_information_cont">User Information (continuation)</string>
+    <string name="answer">Answer:</string>
+    <string name="title">Title</string>
+    <string name="prompt_title">Choose Title</string>
+    <!-- TITLE items-->
+    <string name="title_1">Mr.</string>
+    <string name="title_2">Mrs.</string>
+    <string name="title_3">Ms.</string>
+    <!-- Security questions -->
+    <string name="sq_1">Mother\'s maiden name</string>
+    <string name="sq_2">Favourite Team</string>
+    <string name="sq_3">Place of Birth</string>
+    <string name="sq_4">Pet Name</string>
+    <string name="sq_5">Favourite Color</string>
+    <string name="sq_6">Date of Birth</string>
+    <string name="firstname_ca">Firstname:</string>
+    <string name="lastname_ca">Lastname:</string>
+    <string name="address1">Address 1:</string>
+    <string name="address2">Address 2:</string>
+    <string name="post_code">Post Code:</string>
+    <string name="country_ca">Country:</string>
+    <string name="prompt_country">Choose Country</string>
+    <string name="currency_ca">Currency:</string>
+    <string name="prompt_currency">Choose Currency</string>
+    <string name="dob_ca">Date of Birth:</string>
+    <string name="set_date_btn">Set Date</string>
+    <string name="date_goes_here">Select Date</string>
+    <string name="gender">Gender:</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+	<string name="mobile">Mobile</string>
+	<string name="region">County / Region</string>
+	<string name="city">Town / City</string>
+
+    <!-- Validation Fields -->
+    <string name="newtwork_unavailable">Network Unavailable!</string>
+    <string name="service_unavailable">Service unavailable, please try again later.</string>
+    <string name="username_taken">Username is already taken, please select a different one and re-try</string>
+    <string name="password_char_validation">
+                Password must contain at least a number and a letter</string>
+    <string name="password_length_validation">The password should be 6-12 characters long</string>
+    <string name="username_field_validation">Username field is required</string>
+    <string name="password_field_validation">Password field is required</string>
+    <string name="email_char_validation">Correct Email is required</string>
+    <string name="answer_field_validation">Answer field required</string>
+    <string name="firstname_field_validation">Firstname field required</string>
+    <string name="lastname_field_validation">Lastname field required</string>
+    <string name="address1_field_validation">Address1 field required</string>
+    <string name="address2_field_validation">Address2 field required</string>
+    <string name="postcode_field_validation">Post code field required</string>
+    <string name="birthdate_validation">Please provide proper year of birth</string>
+    <string name="gender_validation">Please select your gender</string>
+        <string name="mobile_validation">Mobile field required</string>
+        <string name="region_validation">County/Region field required</string>
+                <string name="city_validation">Town/City field required</string>
+                <string name="text_sample">"i am so bored in this country, i just want to turn it "</string>
+              
+        
+    
+</resources>

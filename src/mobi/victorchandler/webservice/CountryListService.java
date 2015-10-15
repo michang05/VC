@@ -1,0 +1,74 @@
+
+package mobi.victorchandler.webservice;
+
+import mobi.victorchandler.parser.CountryListParser;
+import mobi.victorchandler.util.DataHelper;
+
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.DefaultHttpClient;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.HashMap;
+/**
+ * Class for connecting to CountryList Service
+ * @author riveram
+ *
+ */
+public class CountryListService implements WebServiceExecutor {
+
+    private CountryListParser listParser;
+    private HashMap<Integer, String> countryList;
+
+    @Override
+    public void loadFromDb() {
+        // TODO Auto-generated method stub
+
+    }
+
+    @Override
+    public boolean executeRequest() {
+
+        try {
+            HttpGet get = new HttpGet(LIST_COUNTRIES);
+
+            HttpResponse response = new DefaultHttpClient().execute(get);
+
+            HttpEntity entity = response.getEntity();
+            if (entity != null) {
+                InputStream instream = entity.getContent();
+                String result = DataHelper.convertStreamToString(instream);
+                instream.close();
+
+                if (result.trim().equals(""))
+                    return false;
+
+                // Parse JSON Result
+                listParser = new CountryListParser(result);
+                countryList = listParser.getCountryList();
+                if (countryList == null) {
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+        } catch (ClientProtocolException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+            return false;
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+            return false;
+        }
+
+        return true;
+    }
+
+    public HashMap<Integer, String> getCountryList() {
+        return countryList;
+    }
+}

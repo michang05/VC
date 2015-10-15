@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10sp" android:layout_gravity="center">
+	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:text="you ran out of credit. please select your credit card and add at least the prefilled amount to place your bet now."></TextView>
+	<TableRow android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		<TextView android:text="Credit Card" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:layout_marginRight="10sp"></TextView>
+		<Spinner android:id="@+id/creditcard" android:layout_height="wrap_content"
+			android:layout_weight="1" android:layout_width="wrap_content"></Spinner>
+	</TableRow>
+	<TableRow android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="CSC"></TextView>
+		<EditText android:id="@+id/cscet" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight="1"></EditText>
+	</TableRow>
+	<TableRow android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Amount"></TextView>
+		<EditText android:id="@+id/amountet" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight="1"></EditText>
+	</TableRow>
+	<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/deposit" android:text="Deposit &amp; Bet Now"></Button>
+</TableLayout>

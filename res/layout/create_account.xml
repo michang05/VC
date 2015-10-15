@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/ScrollView01"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent"
+	android:scrollbarAlwaysDrawVerticalTrack="true" android:scrollbars="vertical"
+	android:layout_width="fill_parent" android:scrollbarSize="10pt"
+	android:background="#000000" android:layout_gravity="center">
+
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="match_parent" android:layout_height="match_parent">
+		<!-- Account Information -->
+		<EditText android:id="@+id/EditText01" android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:text="@string/account_info"
+			android:layout_gravity="center" android:gravity="center"
+			android:editable="false" android:focusable="false"
+			android:background="@color/ca_header" android:layout_marginBottom="5dip" />
+
+		<LinearLayout android:layout_height="wrap_content"
+			android:id="@+id/linUsername" android:layout_width="match_parent">
+			<TextView android:id="@+id/asterisk" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="*"
+				android:textColor="#FF3300" android:layout_marginLeft="4dip" />
+			<TextView android:id="@+id/TextView01" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/username"
+				android:textColor="#FFFFFF" android:layout_marginLeft="4dip" />
+		</LinearLayout>
+		<EditText android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:singleLine="true"
+			android:id="@+id/txtCreateUsername" android:layout_gravity="center"
+			android:layout_marginLeft="3dip" android:layout_marginRight="5dip" />
+		<LinearLayout android:layout_height="wrap_content"
+			android:id="@+id/linPassword" android:layout_width="match_parent">
+			<TextView android:id="@+id/asterisk" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="*"
+				android:textColor="#FF3300" android:layout_marginLeft="4dip" />
+			<TextView android:id="@+id/TextView02" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/password_ca"
+				android:textColor="#FFFFFF" android:layout_marginLeft="4dip" />
+		</LinearLayout>
+		<EditText android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:singleLine="true"
+			android:id="@+id/txtCreatePassword" android:layout_gravity="center"
+			android:layout_marginLeft="3dip" android:layout_marginRight="5dip"
+			android:inputType="textPassword" />
+		<LinearLayout android:layout_height="wrap_content"
+			android:id="@+id/linEmail" android:layout_width="match_parent">
+			<TextView android:id="@+id/asterisk" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="*"
+				android:textColor="#FF3300" android:layout_marginLeft="4dip" />
+			<TextView android:id="@+id/TextView02" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/email_ca"
+				android:textColor="#FFFFFF" android:layout_marginLeft="4dip" />
+		</LinearLayout>
+		<EditText android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:singleLine="true"
+			android:layout_gravity="center"
+			android:layout_marginLeft="3dip" android:layout_marginRight="5dip"
+			android:inputType="textEmailAddress" android:id="@+id/txtCreateEmail"/>
+		<LinearLayout android:layout_height="wrap_content"
+			android:id="@+id/linSecQuestion" android:layout_width="match_parent">
+			<TextView android:id="@+id/asterisk" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="*"
+				android:textColor="#FF3300" android:layout_marginLeft="4dip" />
+			<TextView android:id="@+id/TextView03" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/security_question_ca"
+				android:textColor="#FFFFFF" android:layout_marginLeft="4dip" />
+		</LinearLayout>
+		<Spinner android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:id="@+id/spnCreateSecurityQuestion" android:layout_gravity="center"
+			android:layout_marginLeft="3dip" android:layout_marginRight="5dip" android:entries="@array/security_questions" android:prompt="@string/prompt_security_question"/>
+		<LinearLayout android:layout_height="wrap_content"
+			android:id="@+id/linSecQuestionAnswer" android:layout_width="match_parent"
+			android:gravity="center">
+			<TextView android:id="@+id/asterisk" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="*"
+				android:textColor="#FF3300" android:layout_marginLeft="4dip" />
+			<TextView android:id="@+id/TextView04" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/answer_ca"
+				android:textColor="#FFFFFF" android:layout_marginLeft="4dip" />
+		</LinearLayout>
+		<EditText android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:singleLine="true"
+			android:id="@+id/txtCreateSecurityAnswer" android:layout_gravity="center"
+			android:layout_marginLeft="3dip" android:layout_marginRight="5dip" />
+
+		<!-- User Information -->
+		<EditText android:id="@+id/EditText02" android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:text="@string/user_information"
+			android:layout_gravity="center" android:gravity="center"
+			android:editable="false" android:focusable="false"
+			android:background="@color/ca_header" android:layout_marginBottom="5dip" />
+		<LinearLayout android:layout_height="wrap_content"
+			android:id="@+id/linearLayout1" android:layout_width="match_parent"
+			android:gravity="center">
+			<TextView android:id="@+id/asterisk" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="*"
+				android:textColor="#FF3300" android:layout_marginLeft="4dip" />
+			<TextView android:id="@+id/TextView04" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/title"
+				android:layout_gravity="center" android:textColor="#FFFFFF"
+				android:layout_marginLeft="4dip" />
+			<Spinner android:layout_height="wrap_content" android:id="@+id/spnTitle"
+				android:layout_width="150dp" android:prompt="@string/prompt_title" android:entries="@array/titles"/>
+		</LinearLayout>
+		<LinearLayout android:layout_height="wrap_content"
+			android:id="@+id/linFirstName" android:layout_width="match_parent">
+			<TextView android:id="@+id/asterisk" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="*"
+				android:textColor="#FF3300" android:layout_marginLeft="4dip" />
+			<TextView android:id="@+id/TextView01" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/firstname_ca"
+				android:textColor="#FFFFFF" android:layout_marginLeft="4dip" />
+		</LinearLayout>
+		<EditText android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:singleLine="true"
+			android:id="@+id/txtCreateFirstName" android:layout_gravity="center"
+			android:layout_marginLeft="3dip" android:layout_marginRight="5dip"
+			android:inputType="textCapSentences" />
+		<LinearLayout android:layout_height="wrap_content"
+			android:id="@+id/linLastName" android:layout_width="match_parent">
+			<TextView android:id="@+id/asterisk" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="*"
+				android:textColor="#FF3300" android:layout_marginLeft="4dip" />
+			<TextView android:id="@+id/TextView01" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/lastname_ca"
+				android:textColor="#FFFFFF" android:layout_marginLeft="4dip" />
+		</LinearLayout>
+		<EditText android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:singleLine="true"
+			android:id="@+id/txtCreateLastName" android:layout_gravity="center"
+			android:layout_marginLeft="3dip" android:layout_marginRight="5dip"
+			android:inputType="textCapSentences" />
+		<Button android:text="@string/continue_btn"
+			android:layout_height="wrap_content" android:id="@+id/btnContinue"
+			android:layout_gravity="center" android:layout_width="200dp"></Button>
+
+	</LinearLayout>
+</ScrollView>

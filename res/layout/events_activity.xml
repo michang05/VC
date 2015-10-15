@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Events -->
+<LinearLayout android:layout_height="fill_parent"
+	android:id="@+id/linEvents" android:orientation="vertical"
+	xmlns:app="http://schemas.android.com/apk/res/mobi.victorchandler"
+	android:layout_width="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+	<mobi.victorchandler.view.ActionBar
+		android:id="@+id/actionbar" style="@style/ActionBar"
+		android:visibility="gone" />
+
+	<LinearLayout android:background="@drawable/head_background"
+		android:orientation="horizontal" android:layout_height="wrap_content"
+		android:layout_width="fill_parent">
+
+		<TextView android:layout_height="wrap_content"
+			android:layout_marginLeft="5sp" android:id="@+id/tvEventNameHeader"
+			android:textColor="@android:color/white" android:textSize="18sp"
+			android:text="Events" android:layout_width="wrap_content" />
+	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content"
+		android:orientation="horizontal" android:gravity="right"
+		android:layout_width="fill_parent"></LinearLayout>
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:gravity="center">
+		<TextView android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:layout_gravity="center" android:id="@+id/tvLastUpdateEvents"
+			android:layout_marginRight="5sp" android:singleLine="true"
+			android:text="updated datetime" android:textColor="#FF6600"
+			android:textSize="12sp" />
+		<Button android:id="@+id/btnRefreshEvents"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:layout_marginRight="5sp" android:background="@drawable/refresh" />
+		<ToggleButton android:layout_width="wrap_content"
+			android:id="@+id/favbtn" android:layout_height="wrap_content"
+			android:background="@drawable/favorite" android:textOff="" android:textOn=""/>
+	</LinearLayout>
+	<ListView android:id="@android:id/list" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:background="@drawable/list_item_background" />
+	<TextView android:id="@+id/android:empty"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_gravity="center" android:text="No Data Available" />
+	<!-- <ProgressBar android:id="@+id/progressBar" style="@android:style/Widget.ProgressBar.Inverse" 
+		android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		android:layout_gravity="center_horizontal" android:layout_margin="10sp"></ProgressBar> -->
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:orientation="vertical" android:paddingLeft="10sp"
+	android:paddingRight="10sp">
+
+
+	<TextView android:id="@+id/meetingtv" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="MeetingName"
+		android:textSize="18sp" android:layout_margin="5sp" android:textColor="#136582"/>
+	<TextView android:id="@+id/markettv" android:layout_width="wrap_content"
+		android:textColor="@android:color/black" android:layout_height="wrap_content"
+		android:text="MarketName" android:layout_margin="5sp"/>
+	<TextView android:id="@+id/outcometv" android:textColor="@android:color/black" android:layout_height="wrap_content"
+		android:text="OutcomeName" android:textSize="18sp" android:layout_width="fill_parent" android:gravity="center"/>
+	<View android:layout_height="2dip" android:background="#FF909090"
+		android:layout_width="fill_parent" android:layout_marginTop="5sp"
+		android:layout_marginBottom="5sp" />
+	<TableLayout android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<TableRow android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:layout_gravity="right">
+			<TextView android:layout_height="wrap_content"
+				android:textColor="@android:color/black" android:layout_width="wrap_content"
+				android:text="Odds: " />
+			<TextView android:id="@+id/oddstv" android:layout_height="wrap_content"
+				android:text="OddsValue"
+				android:textColor="@android:color/black" android:textStyle="bold"/>
+		</TableRow>
+		<TableRow android:layout_height="wrap_content"
+			android:layout_width="wrap_content">
+			<TextView android:layout_height="wrap_content"
+				android:textColor="@android:color/black" android:layout_width="wrap_content"
+				android:text="Stake(s): " />
+			<TextView android:id="@+id/stakestv" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:text="StakesValue"
+				android:textColor="@android:color/black" android:textStyle="bold" />
+		</TableRow>
+		
+	</TableLayout>
+
+	<RelativeLayout android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:layout_margin="5sp">
+		<ToggleButton android:textOn="" android:textOff="" android:minWidth="30sp"
+		android:minHeight="30sp"
+			android:layout_width="wrap_content" android:textColor="@android:color/black"
+			android:layout_height="wrap_content" android:id="@+id/tbAlarm"
+			android:background="@drawable/alarm_state" />
+		<TextView android:textColor="@android:color/black" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/tvAlarmDate" android:text="December 25,2080:" android:layout_alignBaseline="@+id/tbAlarm" android:layout_alignBottom="@+id/tbAlarm" android:layout_toRightOf="@+id/tbAlarm" android:layout_marginLeft="16dp"></TextView>
+	</RelativeLayout>
+
+
+</LinearLayout>

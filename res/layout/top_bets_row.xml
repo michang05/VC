@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/linearTransactionTopBets"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content" android:orientation="vertical"
+	android:layout_width="fill_parent">
+	<TableLayout android:stretchColumns="1"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<TableRow>
+			<TextView android:textColor="@android:color/white"
+				android:padding="3dip" android:id="@+id/tvTopBetsEventName"
+				android:ellipsize="marquee" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="wrap_content"/>
+		</TableRow>
+		<TableRow>
+			<TextView android:text="Top Right" android:padding="3dip"
+				android:id="@+id/tvTopBetsMarketName" />
+		</TableRow>
+	</TableLayout>
+	<RelativeLayout android:id="@+id/relativeLayout1"
+		android:layout_height="wrap_content" android:layout_width="fill_parent">
+		<TextView android:layout_height="wrap_content"
+			android:layout_alignParentTop="true" android:textColor="#FFCC00"
+			android:layout_alignParentLeft="true" android:padding="3dip"
+			android:textSize="14sp" android:layout_width="wrap_content"
+			android:id="@+id/tvOutcomeName" android:text="Left"></TextView>
+		<TextView android:layout_height="wrap_content"
+			android:textColor="#FFCC00" android:paddingRight="8dip"
+			android:layout_width="wrap_content" android:id="@+id/tvOutcomeFormattedPrice"
+			android:text="Right" android:layout_alignBaseline="@+id/tvOutcomeName"
+			android:layout_alignBottom="@+id/tvOutcomeName"
+			android:layout_alignParentRight="true"></TextView>
+	</RelativeLayout>
+</LinearLayout>
+
+

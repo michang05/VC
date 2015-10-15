@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	android:versionCode="1" android:versionName="1.0" package="mobi.victorchandler">
+	<uses-sdk android:minSdkVersion="8" />
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+
+	<application android:label="@string/app_name"
+		android:theme="@android:style/Theme.NoTitleBar" android:icon="@drawable/vc_icon">
+		<activity android:name=".Home" android:label="@string/app_name"
+			android:configChanges="keyboard|orientation|locale">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name="OtherActivity"></activity>
+		<activity android:name="LiveBetting"></activity>
+		<activity android:name="Sports"></activity>
+		<activity android:name="TopBets"></activity>
+		<activity android:name="NextEvents"></activity>
+		<activity android:name=".activitygroup.LiveBettingTab"></activity>
+		<activity android:name=".activitygroup.NextEventsTab"></activity>
+		<activity android:name=".activitygroup.TopBetsTab"></activity>
+		<activity android:name=".activitygroup.AllSportsTab"></activity>
+		<activity android:name="BetSlip"
+			android:configChanges="keyboardHidden|orientation|screenLayout"/>
+		<activity android:name="MarketOutcomes"/>
+		<activity android:name="Login"></activity>
+		<activity android:name="BetReceipt"></activity>
+		<activity android:name="Meetings"></activity>
+		<activity android:name="Events"></activity>
+		<activity android:name="MyAccountHome"></activity>
+		<activity android:name="Statements" 
+			android:configChanges="keyboardHidden|orientation|screenLayout"></activity>
+		<activity android:name=".SettledBetsTab"></activity>
+		<activity android:name=".OpenBetsTab"></activity>
+		<activity android:name="Favorites"></activity>
+		<activity android:name="Settings"></activity>
+		<activity android:name="CreateAccount"></activity>
+		<activity android:name="CreateAccount2"></activity>
+		<activity android:name="TransactionsTab"></activity>
+
+	</application>
+</manifest>

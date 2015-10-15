@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="10sp">
+	
+	<TextView android:text="Bet Type" android:id="@+id/multipletv"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_marginRight="10sp" android:textStyle="bold"/>
+	<EditText android:hint="1.00" android:id="@+id/multipleet"
+		android:layout_height="wrap_content" android:layout_width="wrap_content"
+		android:layout_weight="1" android:inputType="numberDecimal" android:gravity="right"/>
+	<CheckBox android:text="E/W" android:id="@+id/ewcb"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@android:color/black"/>
+		
+</TableRow>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@android:color/black" android:scaleType="fitXY"
+	android:padding="0dp" android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<mobi.victorchandler.view.CompoundHeader
+		android:layout_width="fill_parent" android:id="@+id/compoundheader"
+		android:layout_height="match_parent" style="@style/ActionBar">
+		
+		<ImageView android:src="@drawable/vc_logo_home" android:id="@+id/titlelogo"
+			android:visibility="invisible" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:paddingTop="10dip"
+			android:paddingLeft="10dip" />
+			
+		<TextView android:id="@+id/navpath" android:layout_width="wrap_content"
+			android:textColor="#ffffffff" android:textStyle="bold"
+			android:layout_height="wrap_content" android:layout_toLeftOf="@+id/favbtn"
+			android:layout_centerVertical="true" android:layout_alignParentLeft="true" />
+			
+		<ToggleButton android:id="@id/favbtn" android:textOn=""
+			android:textOff="" android:background="@drawable/favorite"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_centerVertical="true" android:layout_toLeftOf="@+id/betsliphdr" />
+			
+		<Button android:text="0" android:id="@+id/betsliphdr"
+			android:layout_width="50dip" android:layout_alignParentRight="true"
+			android:layout_centerVertical="true" android:layout_height="fill_parent"
+			android:background="@drawable/betslip" />
+			
+	</mobi.victorchandler.view.CompoundHeader>
+
+</LinearLayout>

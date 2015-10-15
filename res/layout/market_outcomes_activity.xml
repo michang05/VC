@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Market Outcomes -->
+<LinearLayout android:layout_width="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent" android:id="@+id/linMarketOutcomes"
+	android:orientation="vertical"
+	xmlns:app="http://schemas.android.com/apk/res/mobi.victorchandler">
+
+	<mobi.victorchandler.view.ActionBar
+		android:id="@+id/actionbar" style="@style/ActionBar" android:visibility="gone" />
+
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:background="@drawable/head_background" android:id="@+id/linMarketOutcomesHeader">
+
+		<TextView android:layout_height="wrap_content" android:text="Market"
+			android:layout_width="wrap_content" android:textSize="18sp"
+			android:textColor="@android:color/white" android:layout_marginLeft="5sp"
+			android:id="@+id/tvEventName_MO" />
+	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:gravity="center"
+		android:id="@+id/linearUpdatePanel">
+		<TextView android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:layout_gravity="center" android:id="@+id/tvLastUpdateMarketOutcomes"
+			android:layout_marginRight="5sp" android:singleLine="true"
+			android:text="updated price" android:textColor="#FF6600"
+			android:textSize="12sp" />
+		<Button android:id="@+id/btnRefreshMarketOutcomes"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:layout_marginRight="5sp" android:background="@drawable/refresh" />
+	</LinearLayout>
+	<!-- <TextView android:id="@+id/android:empty" android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" android:layout_gravity="center" android:text="No 
+		Data Available" /> -->
+	<!-- <ProgressBar android:id="@+id/progressBar" style="@android:style/Widget.ProgressBar.Inverse" 
+		android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		android:layout_gravity="center_horizontal" android:layout_margin="10sp"></ProgressBar> -->
+
+</LinearLayout>

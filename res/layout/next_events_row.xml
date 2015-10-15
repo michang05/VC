@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/linearTransactionNextEvents"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<TableLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:stretchColumns="1">
+		<TableRow>
+			<TextView android:textColor="@android:color/white"
+				android:padding="3dip" android:id="@+id/tvNextEventsName"
+				android:ellipsize="marquee" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="wrap_content"/>
+		</TableRow>
+		<TableRow>
+			<TextView android:text="Top Right" android:padding="3dip"
+				android:id="@+id/tvNextEventsMeetingName" />
+		</TableRow>
+		<TableRow>
+			<TextView android:textSize="14sp" android:id="@+id/tvSportName"
+				android:textColor="#FFCC00" android:padding="3dip" />
+		</TableRow>
+	</TableLayout>
+
+</LinearLayout>
+
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:id="@+id/tableLayout1"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:stretchColumns="0">
+	<TableRow android:id="@+id/tableRow1" android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:gravity="center">
+		<TextView android:text="@string/text_sample"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:id="@+id/tvMO_Name" android:width="240sp" android:padding="5sp" android:layout_margin="5sp"/>
+		<ToggleButton android:focusable="false"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:id="@+id/tbMO_AddDelete" android:layout_margin="5sp"/>
+	</TableRow>
+</TableLayout>
+
+
+

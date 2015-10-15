@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:orientation="vertical" android:paddingLeft="10sp" android:paddingRight="10sp" >
+	<TextView android:layout_width="wrap_content" android:text="OutcomeName"
+		android:layout_height="wrap_content" android:id="@+id/outcometv"
+		android:textSize="18sp" android:textColor="@android:color/black"></TextView>
+	<TextView android:id="@+id/markettv" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="MarketName" android:textColor="@android:color/black"
+		android:textSize="18sp"></TextView>
+	<TextView android:layout_width="wrap_content" android:text="MeetingName"
+		android:layout_height="wrap_content" android:id="@+id/meetingtv" android:textColor="@android:color/black"
+		android:textSize="18sp"></TextView>
+</LinearLayout>

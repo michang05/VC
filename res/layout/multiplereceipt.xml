@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:paddingLeft="10sp" android:paddingRight="10sp">
+	<View android:layout_height="2dip" android:background="#FF909090"
+	android:layout_width="fill_parent" android:layout_marginTop="10sp"
+	android:layout_marginBottom="5sp" />
+	<TableRow android:layout_height="wrap_content"
+		android:layout_width="wrap_content">
+		<TextView android:layout_height="wrap_content"
+			android:textColor="@android:color/black" android:layout_width="wrap_content"
+			android:text="Multiple Type: "></TextView>
+		<TextView android:id="@+id/multipletypetv" android:textColor="@android:color/black"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:text="TypeValue" android:textStyle="bold"></TextView>
+	</TableRow>
+	
+	<TableRow android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:paddingBottom="5sp">
+		<TextView android:layout_height="wrap_content"
+			android:textColor="@android:color/black" android:layout_width="wrap_content"
+			android:text="Stake(s): "/>
+		<TextView android:id="@+id/stakestv" android:layout_height="wrap_content"
+			android:textColor="@android:color/black" android:layout_width="wrap_content"
+			android:text="StakesValue" android:textStyle="bold"/>
+	</TableRow>
+	
+
+</TableLayout>

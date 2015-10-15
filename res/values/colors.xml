@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="Grey">#ffd8d6d6</color>
+	<color name="Blue">#ff1d97c3</color>
+	
+	<color name="app_background">#A5D5E7</color>
+	<color name="light_red">#CCCCCC</color>
+	<color name="dark_red">#996600</color>
+		
+	<color name="text_tab_selected">#000000</color>
+	<color name="text_tab_unselected">#FFFFFF</color>
+	
+	<!-- ActionBar -->
+	<color name="actionbar_separator">#000000</color>
+	<color name="actionbar_title">#FFFFFF</color>
+	<color name="actionbar_background_start">#56B1D2</color>
+	<color name="actionbar_background_end">#0A3241</color>
+	<color name="actionbar_background_item_pressed_start">#FF7F00</color>
+	<color name="actionbar_background_item_pressed_end">#EE7600</color>
+
+	<!-- List Header Separator -->
+	<color name="head_start">#000000</color>
+	<color name="head_end">#1D97C3</color>
+
+	<!-- Tab Header -->
+	<color name="tab_header_start">#1D97C3</color>
+	<color name="tab_header_end">#1D97C3</color>
+
+	<!-- Category Header -->
+	<color name="category_header_start">#000000</color>
+	<color name="category_header_end">#136582</color>
+
+	<!-- Category Item Header -->
+	<color name="category_header_item_start">#56B1D2</color>
+	<color name="category_header_item_end">#56B1D2</color>
+	
+	<!-- Bet Slip Item -->
+	<color name="bs_item_start">#0033FF</color>
+	<color name="bs_item_end">#000099</color>
+
+	<!-- Create Account -->
+	<color name="ca_header">#1D97C3</color>
+	<color name="text_ca">#136582</color>
+</resources>

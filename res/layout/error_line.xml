@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/error_line" android:layout_margin="5sp" android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/errortv"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:enabled="true"
+        android:text="error message here might be longer thata afasdfa dsaf asfsad sdafsdaf asdf asdfasd"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp" android:layout_gravity="center">
+    </TextView>
+
+    <Button
+        android:id="@+id/acceptbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/accept"
+        android:textSize="9sp" android:layout_gravity="center">
+    </Button>
+
+</LinearLayout>

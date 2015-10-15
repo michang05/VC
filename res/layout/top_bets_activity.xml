@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Top Bets TAB -->
+<LinearLayout android:layout_width="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent" android:id="@+id/linTopBets"
+	android:orientation="vertical">
+
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:background="@drawable/head_background">
+
+		<TextView android:layout_height="wrap_content" android:text="Top Bets"
+			android:layout_width="wrap_content" android:textSize="25sp"
+			android:textColor="@android:color/white" android:layout_gravity="center"
+			android:layout_marginLeft="10dip" />
+
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:gravity="right">
+			<TextView android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_gravity="center" android:textColor="#FF6600"
+				android:id="@+id/tvLastUpdate" android:layout_marginRight="5sp"
+				android:textSize="10sp"/>
+			<Button android:background="@drawable/refresh"
+				android:layout_height="wrap_content" android:layout_width="wrap_content"
+				android:layout_gravity="center" android:id="@+id/btnRefreshTopBets"
+				android:layout_marginRight="5dip" />
+		</LinearLayout>
+	</LinearLayout>
+	<ListView android:id="@android:id/list" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:background="@drawable/list_item_background" />
+	<TextView android:id="@+id/android:empty"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_gravity="center" android:text="No Data Available" />
+	<!-- <ProgressBar android:id="@+id/progressBar" style="@android:style/Widget.ProgressBar.Inverse" 
+		android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		android:layout_gravity="center_horizontal" android:layout_margin="10sp"></ProgressBar> -->
+
+</LinearLayout>
